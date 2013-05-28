@@ -69,6 +69,14 @@ import org.sonar.api.Property;
             name = "Set SSL On Connect",
             global = true, project = false, module = false),
     @Property(
+            key = AnalysisReportHelper.TO_SMS_PROPERTY,
+            name = "Message",
+            global = true, project = false, module = false),
+    @Property(
+            key = AnalysisReportHelper.TO_SMS_PROVIDER_PROPERTY,
+            name = "Set SSL On Connect",
+            global = true, project = false, module = false),
+    @Property(
         key = AnalysisReportHelper.TO_PROPERTY,
         name = "To",
         global = false, project = true, module = false) })
