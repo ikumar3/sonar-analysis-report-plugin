@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-Email Reports Plugin:-
+Analysis-Report Plugin:-
 =====================
 
 This plugin will send an email/sms after every analysis is completed.<br>
@@ -43,15 +43,29 @@ Set the value of the property - <br>
 Steps to Install:-<br>
 =====================================================================<br>
 1) You can get the JAR from the zip version attached with the previous email on this thread or <br>
-from  https://github.com/jbdundas/jd-sonar-email-plugin/tree/master/target  ( sonar-jd-email-plugin-1.0.jar). <br>
+from  target  folder of this project's root directory in github. <br>
 2) Download it into the SONAR_HOME/extensions/plugins directory<br>
 3) Restart the Sonar server<br>
 4) You will then have to define the properties as mentioned in the <br>
-ReadMe.md (https://github.com/jbdundas/jd-sonar-email-plugin/blob/master/README.md)<br>
+ReadMe.md above<br>
 5) Note that you can define multiple To addresses from the project configuration <br>
 file ( sonar-project.properties for Sonar Runner, build.xml for ant or pom.xml for maven ).<br>
  This will supersede the value put for the same field from the global settings page and it will<br>
   send an email accordingly.<br>
   
  Note:- A sample report can be seen at:- <br>
- https://github.com/jbdundas/jd-sonar-email-plugin/blob/master/sonarreport1368751371210_-847661506.pdf <br>
+ sonarreport1368751371210_-847661506.pdf <br>
+
+
+SMS Notification:-<br>
+============================================================================
+You will need the following proeprties too:-
+1) sonar.jd.sms.to - The phone number to which you wish to send the sms ( with country code ).
+2) sonar.jd.sms.to.provider - The name of the carrier for the sms . For e.g. AT&T, Verizon, etc.
+3) sonar.jd.sms.enabled - Is SMS sending enabled? True or False
+
+You can find the exact name of your provider and other details on this page:-
+http://en.wikipedia.org/wiki/List_of_SMS_gateways
+
+Note that the first and third property are mandatory while the second is optional if you have the entire string of 
+mobile number as an email from the above link.
