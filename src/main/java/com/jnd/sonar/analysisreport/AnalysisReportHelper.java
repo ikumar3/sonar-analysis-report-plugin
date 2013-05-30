@@ -377,14 +377,18 @@ public final class AnalysisReportHelper implements PostJob {
 				DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 				Calendar cal = Calendar.getInstance();
 				String dateStr = dateFormat.format(cal.getTime()) ;
-				
+				smsObject.setHostName(hostname);
 				smsObject.setSmtpPort(Integer.parseInt(portno));
 				smsObject.setAuthenticator(new DefaultAuthenticator(username,password));
 				smsObject.setSSL(true);
 				smsObject.setFrom(from);
 				smsObject.setSubject("");
 				smsObject.setMsg("Sonar analysis completed successfully at "+ dateStr + " . Please visit " + settings.getString("sonar.host.url")  + " for more details!");
-				smsObject.addTo(send_sms_to);
+				//multiple SMS recipients.
+				String[] addrs = StringUtils.split(to_email, "\t\r\n;, ");
+				  for (String addr : addrs) {
+					  smsObject.addTo(send_sms_to);
+				  }
 				smsObject.send();
 			} 
 		catch (EmailException e) {
