@@ -64,10 +64,10 @@ file ( sonar-project.properties for Sonar Runner, build.xml for ant or pom.xml f
 
 <h4>SMS Notification:-</h4><br>
 ===========================================================================
-You will need the following properties too:-
-1) sonar.jd.sms.to - The phone number to which you wish to send the sms ( with country code ). Mandatory property.
-2) sonar.jd.sms.to.provider - The name of the carrier for the sms . For e.g. AT&T, Verizon, etc. Optional property.
-3) sonar.jd.sms.enabled - Is SMS sending enabled? True or False. Optional property.
+You will need the following properties too:-<br>
+1) sonar.jd.sms.to - The phone number to which you wish to send the sms ( with country code ). Mandatory property.<br>
+2) sonar.jd.sms.to.provider - The name of the carrier for the sms . For e.g. AT&T, Verizon, etc. Optional property.<br>
+3) sonar.jd.sms.enabled - Is SMS sending enabled? True or False. Optional property.<br>
 
 You can find the exact name of your provider and other details on this page:-
 http://en.wikipedia.org/wiki/List_of_SMS_gateways
