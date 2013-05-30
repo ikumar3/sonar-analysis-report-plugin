@@ -24,6 +24,11 @@ Added the following functionalities to the plugin:-<br>
 1) PDF Report<br>
 2) HTML based content with violations summary<br>
 3) Image Logo<br>
+4) Send SMS notifications
+
+Downloads
+======================================================================<br>
+You can download the JAR from https://github.com/jbdundas/sonar-analysis-report-plugin/blob/master/target/sonar-analysis-report-plugin-1.0.jar
 
 
 You need to add the values of the email-related properties with their values in the General Settings:-<br>
@@ -58,14 +63,18 @@ file ( sonar-project.properties for Sonar Runner, build.xml for ant or pom.xml f
 
 
 SMS Notification:-<br>
-============================================================================
-You will need the following proeprties too:-
-1) sonar.jd.sms.to - The phone number to which you wish to send the sms ( with country code ).
-2) sonar.jd.sms.to.provider - The name of the carrier for the sms . For e.g. AT&T, Verizon, etc.
-3) sonar.jd.sms.enabled - Is SMS sending enabled? True or False
+===========================================================================
+You will need the following properties too:-
+1) sonar.jd.sms.to - The phone number to which you wish to send the sms ( with country code ). Mandatory property.
+2) sonar.jd.sms.to.provider - The name of the carrier for the sms . For e.g. AT&T, Verizon, etc. Optional property.
+3) sonar.jd.sms.enabled - Is SMS sending enabled? True or False. Optional property.
 
 You can find the exact name of your provider and other details on this page:-
 http://en.wikipedia.org/wiki/List_of_SMS_gateways
 
+For e.g. to send an sms to an AT&T mobile number, use <mobile number>@txt.att.net .Also, for Verizon(US) mobile number,
+it will be <mobile number>@vtext.com
+
 Note that the first and third property are mandatory while the second is optional if you have the entire string of 
 mobile number as an email from the above link.
+
