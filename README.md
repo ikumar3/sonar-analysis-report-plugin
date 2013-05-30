@@ -31,7 +31,7 @@ Downloads
 You can download the JAR from https://github.com/jbdundas/sonar-analysis-report-plugin/blob/master/target/sonar-analysis-report-plugin-1.0.jar
 
 
-<h4>You need to add the values of the email-related properties with their values in the General Settings:-</h4><br>
+<h4>You need to add the values of the email-related properties with their values in the General Settings:-</h4>
 =====================================================================
 Set the value of the property - <br>
 1)  sonar.jd.smptp.to (suggested to set this property from the project).<br>
@@ -62,7 +62,7 @@ file ( sonar-project.properties for Sonar Runner, build.xml for ant or pom.xml f
  sonarreport1368751371210_-847661506.pdf <br>
 
 
-SMS Notification:-<br>
+<h4>SMS Notification:-</h4><br>
 ===========================================================================
 You will need the following properties too:-
 1) sonar.jd.sms.to - The phone number to which you wish to send the sms ( with country code ). Mandatory property.
