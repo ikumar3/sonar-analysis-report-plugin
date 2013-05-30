@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-Analysis-Report Plugin:-
+<h4>Analysis-Report Plugin:-</h4>
 =====================
 
 This plugin will send an email/sms after every analysis is completed.<br>
@@ -31,7 +31,7 @@ Downloads
 You can download the JAR from https://github.com/jbdundas/sonar-analysis-report-plugin/blob/master/target/sonar-analysis-report-plugin-1.0.jar
 
 
-You need to add the values of the email-related properties with their values in the General Settings:-<br>
+<h4>You need to add the values of the email-related properties with their values in the General Settings:-</h4><br>
 =====================================================================
 Set the value of the property - <br>
 1)  sonar.jd.smptp.to (suggested to set this property from the project).<br>
